@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <title>Happy Birthday Bestie</title> 
+    <link rel="icon" type="image/x-icon" href="images/cacke-icon.png">
+    <link rel="stylesheet" href="style.css" /> 
+    <script src="confetti.js"></script>
+</head>
+<body>
+  <div class="balloon"></div>
+<div class="content">
+<h1>please keep scrolling</h1>
+<div class="przerwa"></div>
+<p>hi!</p>
+<img src="images/hi.jpg">
+<p>happy b-day to my dearest bubu</p>
+<img src="images/happy.jpg">
+<p>wish u all the best</p>
+<img src="images/flowers2.jpg">
+<p>may all your dreams come true ✨</p>
+<img src="images/dearest.jpg">
+<p>and especially...</p>
+<img src="images/aaaaaaaaa.jpg">
+<p>good luck with your new job!</p>
+<img src="images/job.jpg">
+<p>and good luck with your master's thesis 💪 (you got this bestie!) </p>
+<img style="max-width: 700px; width: 100%" src="images/magister.png">
+<p>i hope you find happiness wherever life takes you 🌸💫</p>
+<img src="images/wherever.jpg">
+<p>looking forward to the next time we meet</p>
+<img src="images/picnic.jpg">
+<p>for another cozy meetup <3</p>
+<img src="images/cats.jpg">
+<p>and even if my wishes are a little late (sorry pookie! 😣) ...</p>
+<img style="max-width: 600px; width:90%;" src="images/apolocheese.jpg">
+<p>they still come with lots of love </p>
+<img src="images/love.jpg">
+<p>and whether it's your birthday or not, i will always wish you the very best 💕</p>
+<img src="images/cake.jpg">
+<img src="images/birthday2.jpg">
+<p>sending you a big hug </p>
+<img style="max-width: 600px; width:90%;" src="images/hug.jpg">
+<p>have a wonderful day or night or whatever</p>
+<img src="images/birthday.jpg">
+<p>bye sweetie!</p>
+<img style="max-width: 600px; width:90%;" src="images/bye.jpg">
+<button onclick="startAndStopConfetti();" class="btn btn-danger">Click me</button>
+<div class="przerwa"></div>
+<br><br>
+<div class="przerwa"></div>
+<button class="report-btn" onclick="toReportPage()">report ⚠ </button>
+</div>
+<script src="confetti.js"></script>
+<script>
+    function startAndStopConfetti() {
+      startConfetti(); 
+  
+      
+      setTimeout(function() {
+        stopConfetti();
+      }, 3000);
+    }
+
+    function  toReportPage(){
+        window.location.href = 'report.html';
+    }
+
+    const balloon = document.querySelector(".balloon");
+
+window.addEventListener("scroll", () => {
+
+  const scrollTop = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+
+  const scrollPercent = scrollTop / docHeight;
+
+  const maxMove = window.innerHeight - 80;
+
+  balloon.style.top = scrollPercent * maxMove + "px";
+
+});
+  </script>
+
+</body>
+</html>

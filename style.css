@@ -1,0 +1,137 @@
+
+html, body {
+  overflow-x: hidden;
+
+}
+
+
+.balloon{
+  position: fixed;
+  right: 0px;
+  width: 90px;
+  height: 90px;
+
+  background: url("images/balloon.png") no-repeat center;
+  background-size: contain;
+  transition: top 1s ease-out;
+  animation: floatMove 4s ease-in-out infinite;
+}
+
+@keyframes floatMove{
+  0%{
+    transform: translate(0px,0px);
+  }
+
+  50%{
+    transform: translate(0px,15px);
+  }
+
+  100%{
+    transform: translate(0px,0px);
+  }
+}
+  
+
+
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('static/RobotoMono-Regular.ttf') format('truetype'); /* ścieżka do pliku TTF */
+    font-weight: normal;
+    font-style: normal;
+    }
+
+h1{
+    text-align: center;
+    margin-top: 20%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+
+}
+p{
+    margin-top: 700px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 600px;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px; 
+    width:auto;
+}
+
+.grey{
+    color: grey;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#cowboy,#bich{
+    width: 400px;
+}
+
+.przerwa{
+    height: 300px;
+}
+
+button{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top:100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border-radius: 44px;
+    padding:24px 45px;
+    color: aliceblue;
+    border: none;
+    background-color:blueviolet;
+    transition: transform 0.3s ease-out;
+    
+    
+}
+
+button:hover{
+    background-color:rgb(160, 81, 234); 
+    transform: scale(1.1);
+    
+    cursor: pointer;
+}
+.report-btn{
+    background-color: rgb(202, 46, 93)
+}
+
+
+.report-btn:hover{
+background-color: rgb(231, 79, 124)
+}
+
+img{
+max-width: 90%;
+}
+
+
+@media only screen and  (max-width: 1023px) { 
+    p{font-size: 40px;}
+    h1{
+        font-size: 60px;
+        margin-top: 80%;
+        margin-bottom: 50%;
+    }
+
+
+button{
+    font-size: 30px;
+    border-radius: 40px;
+    padding:20px 35px;
+}
+
+}
